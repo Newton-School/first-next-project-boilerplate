@@ -1,14 +1,16 @@
 {
-  "name": "first-next-project-boilerplate",
+  "name": "first-next-project-solution",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "test": "cypress run --headless --reporter mochawesome",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
-  }, 
+    "start": "next start",
+    "cy:run": "cypress run --reporter mochawesome"
+  },
   "dependencies": {
+    "cypress": "^12.14.0",
+    "mochawesome": "^7.1.3",
     "next": "13.4.10",
     "react": "18.2.0",
     "react-dom": "18.2.0"
